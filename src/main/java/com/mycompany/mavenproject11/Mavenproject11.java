@@ -11,6 +11,12 @@ package com.mycompany.mavenproject11;
 public class Mavenproject11 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Sphere s = new Sphere();
+        s.setRadius(19.2);
+        System.out.println("Radius:" + s.getRadius());
+        s.setHeight(20.2);
+        System.out.println("Height:" + s.getHeight());
+        System.out.println("Surface Area:" + s.surfaceArea(19.2,20.2));
+        System.out.println("Volume:" + s.volume());
     }
 }
